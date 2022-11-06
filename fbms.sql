@@ -1,0 +1,38 @@
+-- create database fbms;
+-- use fbms;
+-- CREATE TABLE passenger(id int primary key auto_increment,
+-- 						name varchar(50) not null,
+--                         user_name  varchar(20) not null,
+--                         email varchar(30) not null,
+--                         password varchar(20) not null,
+--                         mobile int,
+--                         address varchar(50),
+--                         dob date);
+-- CREATE TABLE flight(
+-- 	flight_no int primary key auto_increment,
+--     flight_name varchar(50) not null,
+--     flight_desc varchar(50),
+--     flight_total_capacity varchar(50));
+
+-- CREATE TABLE flight_schedule(
+-- 	id int not null,
+--     flight_from int not null,
+--     flight_to int not null,
+--     flight_date date not null,
+--     flight_time time,
+--     cost float,
+--     foreign key(id) references flight(flight_no));
+
+-- CREATE TABLE booked_ticket(
+-- 	ticket_number bigint primary key not null,
+--     passenger_id int not null,
+--     date_of_booking date not null,
+--     date_of_travel date not null,
+--     flight_number int not null,
+--     flight_from varchar(50) not null,
+--     flight_to varchar(50) not null,
+--     flight_time time,
+--     boarding_time time,
+--     flight_seat varchar(10),
+--     foreign key(flight_number) references flight(flight_no),
+--     foreign key(passenger_id) references passenger(id));
